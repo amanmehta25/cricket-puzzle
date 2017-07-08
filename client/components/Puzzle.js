@@ -20,7 +20,7 @@ class Puzzle extends React.Component {
         if (error) {
             gridClassname = classnames({
                 'puzzle-grid': true,
-                'puzzle-grid--error': !data.marked || data.uncorrect
+                'puzzle-grid--error': !data.marked || data.incorrect
             });
         } else {
             gridClassname = classnames({

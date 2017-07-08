@@ -15,11 +15,11 @@ function data(state = [], action){
             ];
         }
 
-        case 'MARK_UNCORRECT' : {
+        case 'MARK_INCORRECT' : {
             const i = action.i;
             return [
                 ...state.slice(0,i), // before the one we are updating
-                {...state[i], uncorrect: action.value},
+                {...state[i], incorrect: action.value},
                 ...state.slice(i + 1), // after the one we are updating
             ];
         }
@@ -29,7 +29,7 @@ function data(state = [], action){
                 ...data,
                 selectedOption: null,
                 marked: false,
-                uncorrect: false
+                incorrect: false
             }));
             return newState;
         }

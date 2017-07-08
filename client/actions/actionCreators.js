@@ -6,8 +6,8 @@ export const selectOption = (option, i) => ({
 });
 
 // mark the uncorrect
-export const markUncorrect = (i, value) => ({
-    type: 'MARK_UNCORRECT',
+export const markIncorrect = (i, value) => ({
+    type: 'MARK_INCORRECT',
     i,
     value
 });

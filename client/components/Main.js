@@ -37,14 +37,14 @@ class Main extends React.Component {
 
         if (!flag) {
             console.log('haha');
-            let uncorrect = 0, correct = 0;
+            let incorrect = 0, correct = 0;
             this.props.data.forEach((data, index) => {
                 if (data.selectedOption === data.answer) {
                     correct++;
-                    this.props.markUncorrect(index, false);
+                    this.props.markIncorrect(index, false);
                 } else {
-                    uncorrect++;
-                    this.props.markUncorrect(index, true);
+                    incorrect++;
+                    this.props.markIncorrect(index, true);
                     this.setState({
                         error: true
                     });
@@ -55,7 +55,7 @@ class Main extends React.Component {
                 isSubmitted: true,
                 data: [
                     { text: 'Correct', value: correct },
-                    { text: 'Uncorrect', value: uncorrect },
+                    { text: 'Incorrect', value: incorrect },
                 ]
             });
         }
@@ -81,8 +81,8 @@ class Main extends React.Component {
                         <div className="main-container__bar-chart">
                             <BarChart
                                 ylabel='Number'
-                                width={400}
-                                height={400}
+                                width={320}
+                                height={320}
                                 margin={margin}
                                 data={this.state.data}
                             />
