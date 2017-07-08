@@ -2,6 +2,10 @@
 
 A simple React + Redux implementation.
 
+## Demo
+
+https://cricket-puzzle.herokuapp.com/
+
 ## Running
 
 First `npm install` to grab all the necessary dependencies. 
