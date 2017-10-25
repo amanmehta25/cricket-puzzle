@@ -6,11 +6,11 @@ A simple React + Redux implementation.
 
 https://cricket-puzzle.herokuapp.com/
 
-## Running
+## Setup & Development
 
-First `npm install` to grab all the necessary dependencies. 
+Run `npm install` to grab all the necessary dependencies. 
 
-Then run `npm start` and open <localhost:3000> in your browser.
+Run `npm start` and open <localhost:3000> in your browser to view the local changes.
 
 ## Production Build
 
